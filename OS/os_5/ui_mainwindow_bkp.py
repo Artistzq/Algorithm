@@ -1,0 +1,95 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'ui_mainwindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1020, 668)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.verticalLayout = QtWidgets.QVBoxLayout(self.centralwidget)
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.frame = QtWidgets.QFrame(self.centralwidget)
+        self.frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame.setObjectName("frame")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.frame)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.tableWidget_files = QtWidgets.QTableWidget(self.frame)
+        self.tableWidget_files.setObjectName("tableView_file_list")
+        self.horizontalLayout_2.addWidget(self.tableWidget_files)
+        self.tableView_bitmap = QtWidgets.QTableView(self.frame)
+        self.tableView_bitmap.setObjectName("tableView_bitmap")
+        self.horizontalLayout_2.addWidget(self.tableView_bitmap)
+        self.listView_msg = QtWidgets.QListView(self.frame)
+        self.listView_msg.setObjectName("listView_msg")
+        self.horizontalLayout_2.addWidget(self.listView_msg)
+        self.horizontalLayout_2.setStretch(0, 2)
+        self.horizontalLayout_2.setStretch(1, 4)
+        self.verticalLayout.addWidget(self.frame)
+        self.frame_2 = QtWidgets.QFrame(self.centralwidget)
+        self.frame_2.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_2.setObjectName("frame_2")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.frame_2)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.frame_3 = QtWidgets.QFrame(self.frame_2)
+        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.horizontalLayout.addWidget(self.frame_3)
+        self.radioButton_set1 = QtWidgets.QRadioButton(self.frame_2)
+        self.radioButton_set1.setObjectName("radioButton_set1")
+        self.horizontalLayout.addWidget(self.radioButton_set1)
+        self.comboBox_assign = QtWidgets.QComboBox(self.frame_2)
+        self.comboBox_assign.setObjectName("comboBox_assign")
+        self.comboBox_assign.addItem("")
+        self.comboBox_assign.addItem("")
+        self.horizontalLayout.addWidget(self.comboBox_assign)
+        self.pushButton_assign = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_assign.setObjectName("pushButton_assign")
+        self.horizontalLayout.addWidget(self.pushButton_assign)
+        self.comboBox_delete = QtWidgets.QComboBox(self.frame_2)
+        self.comboBox_delete.setObjectName("comboBox_delete")
+        self.comboBox_delete.addItem("")
+        self.comboBox_delete.addItem("")
+        self.horizontalLayout.addWidget(self.comboBox_delete)
+        self.pushButton_delete = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_delete.setObjectName("pushButton_delete")
+        self.horizontalLayout.addWidget(self.pushButton_delete)
+        self.pushButton_reset = QtWidgets.QPushButton(self.frame_2)
+        self.pushButton_reset.setObjectName("pushButton_reset")
+        self.horizontalLayout.addWidget(self.pushButton_reset)
+        self.verticalLayout.addWidget(self.frame_2)
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1020, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.radioButton_set1.setText(_translate("MainWindow", "随机初始化磁盘"))
+        self.comboBox_assign.setItemText(0, _translate("MainWindow", "随机生成文件"))
+        self.comboBox_assign.setItemText(1, _translate("MainWindow", "手动输入文件"))
+        self.pushButton_assign.setText(_translate("MainWindow", "分配文件"))
+        self.comboBox_delete.setItemText(0, _translate("MainWindow", "删除全部奇数"))
+        self.comboBox_delete.setItemText(1, _translate("MainWindow", "手动设置删除"))
+        self.pushButton_delete.setText(_translate("MainWindow", "删除文件"))
+        self.pushButton_reset.setText(_translate("MainWindow", "重置磁盘"))
